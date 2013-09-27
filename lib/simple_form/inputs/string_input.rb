@@ -18,15 +18,6 @@ module SimpleForm
         input_type == :string
       end
 
-      def html_options_for(namespace, css_classes)
-        css_classes.delete('form-control') if bootstrap3_check_or_radio?
-        super(namespace, css_classes)
-      end
-
-      def bootstrap3_check_or_radio?
-        SimpleForm.bootstrap3 && (input_type == :check_boxes || input_type == :radio_buttons)
-      end
-
     end
   end
 end
