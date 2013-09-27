@@ -151,6 +151,11 @@ module SimpleForm
   mattr_accessor :input_class
   @@input_class = nil
 
+
+  # Enables or disables bootstrap 3 support
+  mattr_accessor :bootstrap3
+  @@bootstrap3 = false
+
   ## WRAPPER CONFIGURATION
   # The default wrapper to be used by the FormBuilder.
   mattr_accessor :default_wrapper
